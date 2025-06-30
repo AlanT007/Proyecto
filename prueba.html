@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Reservas de Cine</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+    h1, h2 { color: #333; }
+    form, table { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 5px #ccc; }
+    input, select, button { margin-top: 10px; padding: 8px; width: 100%; box-sizing: border-box; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 10px; border-bottom: 1px solid #ccc; text-align: left; }
+  </style>
+</head>
+<body>
+
+  <h1>🎬 Sistema de Reservas de Cine</h1>
+
+  </form>
+
+  <!-- Lista de Películas -->
+  <h2>Cartelera</h2>
+  <div id="peliculas">
+    <!-- Esta sección debe llenarse dinámicamente desde el servidor -->
+    <table>
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Género</th>
+          <th>Duración</th>
+          <th>Clasificación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Ejemplo estático -->
+        <tr>
+          <td>Ejemplo: Matrix</td>
+          <td>Acción</td>
+          <td>02:16</td>
+          <td>B15</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Funciones Disponibles -->
+  <h2>Funciones Disponibles</h2>
+  <div id="funciones">
+    <form action="/reservar" method="POST">
+      <label>Selecciona Función:</label>
+      <select name="Fun_Id">
+        <!-- Opciones dinámicas -->
+        <option value="1">Matrix - Sala 1 - 2025-07-01 20:00</option>
+      </select>
+
+      <label>Número de asiento (1-15):</label>
+      <input type="number" name="Asi_Numero" min="1" max="15" required>
+
+      <button type="submit">Reservar asiento</button>
+    </form>
+  </div>
+
+</body>
+</html>

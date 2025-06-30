@@ -1,0 +1,85 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Reservas de Cine</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+    h1, h2 { color: #333; }
+    .btn {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    .section {
+      background: #fff;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #ccc;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎬 Bienvenido al Sistema de Reservas de Cine</h1>
+
+  <!-- Opciones principales -->
+  <div>
+    <a href="login.html" class="btn">Iniciar Sesión</a>
+  </div>
+
+  <!-- Sección Cartelera -->
+  <div class="section" id="cartelera">
+    <h2>Cartelera de Películas</h2>
+    <p>Consulta las películas disponibles aunque no hayas iniciado sesión.</p>
+
+    <!-- Tabla de películas (rellenada dinámicamente desde backend o reemplazada con JS) -->
+    <table>
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Género</th>
+          <th>Duración</th>
+          <th>Clasificación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Ejemplo de contenido estático -->
+        <tr>
+          <td>Matrix</td>
+          <td>Acción</td>
+          <td>02:16</td>
+          <td>B15</td>
+        </tr>
+        <tr>
+          <td>El Viaje de Chihiro</td>
+          <td>Animación</td>
+          <td>02:05</td>
+          <td>A</td>
+        </tr>
+        <!-- Puedes cargar más dinámicamente desde el servidor -->
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
